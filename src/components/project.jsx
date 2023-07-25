@@ -2,7 +2,7 @@ import React from 'react'
 import ProjectItem from './projectItem'
 const project = () => {
   return (
-    <div className='w-[70%] mx-auto flex flex-col items-center justify-center my-4 '>
+    <div className='w-[70%] mx-auto  flex flex-col items-center justify-center my-4 h-auto' id='project'>
         <h1 className='text-center font-bold text-4xl py-4 text-green-900'>Projects</h1>
         <p className='text-center text-slate-600 py-8 text-md md:text-lg md:w-[70%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam in, optio laudantium nobis libero laborum!</p>
         <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-12 '>

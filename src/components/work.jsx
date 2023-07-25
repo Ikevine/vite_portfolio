@@ -24,7 +24,7 @@ const work = () => {
     //array of information
     
   return (
-    <div className='md:w-[60%] w-[95%] mx-auto h-auto p-4  flex flex-col items-center justify-center' id='home'>
+    <div className='md:w-[60%] w-[95%] mx-auto h-auto p-4  flex flex-col items-center justify-center' id='work'>
          <h1 className='font-bold text-4xl text-center text-green-800 mb-4 w-[50%]'>Work</h1>
          {
             data.map((data , idx) =>{
