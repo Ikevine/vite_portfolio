@@ -10,7 +10,7 @@ const workItems = ({year , title , duration , detail}) => {
                 <span className='font-semibold text-green-900 text-lg'>{title}</span>
                 <span className='text-slate-500 '>{duration}</span>
             </p>
-            <p className='text-base text-slate-600 mt-3 w-[90%] md:w-[60%]'>{detail}</p>
+            <p className='text-base text-slate-600 mt-3 w-[90%] md:w-[80%]'>{detail}</p>
         </li>
        
     </ol>
