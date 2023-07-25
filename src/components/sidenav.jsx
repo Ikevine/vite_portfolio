@@ -12,11 +12,11 @@ const sidenav = () => {
   return (
     //menu nav
     <>
-       <AiOutlineMenu onClick={handleNav} size={24} className='absolute top-4 right-4 z-[99] md:hidden'/>
+       <AiOutlineMenu onClick={handleNav} size={24} className='absolute top-4 right-4 z-[99] md:hidden text-white'/>
        {/* ternary operator */}
        {
         nav ? (
-            <div className='fxed w-full h-screen flex flex-col justify-center items-center'>
+            <div className='fixed w-full h-screen flex flex-col justify-center items-center bg-white z-[98]'>
                 <a href="#home" className='flex items-center justify-center w-[70%] bg-gray-100 shadow-lg shadow-gray-400 p-2 hover:scale-110 ease-in duration-300 rounded-lg m-2 cursor-pointer'>
                   <AiOutlineHome size={20}/>
                   <span className='pl-4'>Home</span>
@@ -46,19 +46,19 @@ const sidenav = () => {
        {/* sideNav on large screen */}
        <div className='fixed top-[20%] left-[1%] z-10 md:block hidden'>
           <div className='flex flex-col'>
-            <a href="#home" className='bg-grey-100 shadow-lg shadow-gray-400 m-2 p-4 rounded-full hover:scale-110 ease-in duration-300'>
+            <a href="#home" className='bg-white shadow-lg shadow-gray-400 m-2 p-4 rounded-full hover:scale-110 ease-in duration-300'>
                 <AiOutlineHome size={20}/>
             </a>
-            <a href="#work" className='bg-grey-100 shadow-lg shadow-gray-400 m-2 p-4 rounded-full hover:scale-110 ease-in duration-300'>
+            <a href="#work" className='bg-white shadow-lg shadow-gray-400 m-2 p-4 rounded-full hover:scale-110 ease-in duration-300'>
                 <MdWorkOutline size={20}/>
             </a>
-            <a href="#project" className='bg-grey-100 shadow-lg shadow-gray-400 m-2 p-4 rounded-full hover:scale-110 ease-in duration-300'>
+            <a href="#project" className='bg-white shadow-lg shadow-gray-400 m-2 p-4 rounded-full hover:scale-110 ease-in duration-300'>
                 <AiOutlineProject size={20}/>
             </a>
-            <a href="#resume" className='bg-grey-100 shadow-lg shadow-gray-400 m-2 p-4 rounded-full hover:scale-110 ease-in duration-300'>
+            <a href="#resume" className='bg-white shadow-lg shadow-gray-400 m-2 p-4 rounded-full hover:scale-110 ease-in duration-300'>
                 <BsPerson size={20}/>
             </a>
-            <a href="#contact" className='bg-grey-100 shadow-lg shadow-gray-400 m-2 p-4 rounded-full hover:scale-110 ease-in duration-300'>
+            <a href="#contact" className='bg-white shadow-lg shadow-gray-400 m-2 p-4 rounded-full hover:scale-110 ease-in duration-300'>
                 <AiOutlineMail size={20}/>
             </a>
           </div>
