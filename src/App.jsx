@@ -1,6 +1,7 @@
 import SideNav from "./components/sidenav";
 import Home from './components/home';
-import Work from './components/work'
+import Work from './components/work';
+import Project from './components/project';
 function App() {
 
   return (
@@ -8,6 +9,7 @@ function App() {
      <SideNav/>
      <Home/>
      <Work/>
+     <Project/>
     </>
   )
 }
