@@ -9,31 +9,33 @@ const sidenav = () => {
     const handleNav = () =>{
         setNav(!nav);
     }
+
+    
   return (
     //menu nav
     <>
-       <AiOutlineMenu onClick={handleNav} size={24} className='absolute top-4 right-4 z-[99] md:hidden text-white'/>
+       <AiOutlineMenu onClick={handleNav} size={24} className='absolute top-4 right-4 z-[99] md:hidden text-slate-700 '/>
        {/* ternary operator */}
        {
         nav ? (
             <div className='fixed w-full h-screen flex flex-col justify-center items-center bg-white z-[98]'>
-                <a href="#home" className='flex items-center justify-center w-[70%] bg-gray-100 shadow-lg shadow-gray-400 p-2 hover:scale-110 ease-in duration-300 rounded-lg m-2 cursor-pointer'>
+                <a onClick={handleNav} href="#home" className='flex items-center justify-center w-[70%] bg-gray-100 shadow-lg shadow-gray-400 p-2 hover:scale-110 ease-in duration-300 rounded-lg m-2 cursor-pointer'>
                   <AiOutlineHome size={20}/>
                   <span className='pl-4'>Home</span>
                 </a>
-                <a href="#work" className='flex items-center justify-center w-[70%] bg-gray-100 shadow-lg shadow-gray-400 p-2 hover:scale-110 ease-in duration-300 rounded-lg m-2 cursor-pointer'>
+                <a onClick={handleNav} href="#work" className='flex items-center justify-center w-[70%] bg-gray-100 shadow-lg shadow-gray-400 p-2 hover:scale-110 ease-in duration-300 rounded-lg m-2 cursor-pointer'>
                   <MdWorkOutline size={20}/>
                   <span className='pl-4'>Work</span>
                 </a>
-                <a href="#project" className='flex items-center justify-center w-[70%] bg-gray-100 shadow-lg shadow-gray-400 p-2 hover:scale-110 ease-in duration-300 rounded-lg m-2 cursor-pointer'>
+                <a onClick={handleNav} href="#project" className='flex items-center justify-center w-[70%] bg-gray-100 shadow-lg shadow-gray-400 p-2 hover:scale-110 ease-in duration-300 rounded-lg m-2 cursor-pointer'>
                   <AiOutlineProject size={20}/>
                   <span className='pl-4'>Projects</span>
                 </a>
-                <a href="#resume" className='flex items-center justify-center w-[70%] bg-gray-100 shadow-lg shadow-gray-400 p-2 hover:scale-110 ease-in duration-300 rounded-lg m-2 cursor-pointer'>
+                <a onClick={handleNav} href="#resume" className='flex items-center justify-center w-[70%] bg-gray-100 shadow-lg shadow-gray-400 p-2 hover:scale-110 ease-in duration-300 rounded-lg m-2 cursor-pointer'>
                   <BsPerson size={20}/>
                   <span className='pl-4'>Resume</span>
                 </a>
-                <a href="#contact" className='flex items-center justify-center w-[70%] bg-gray-100 shadow-lg shadow-gray-400 p-2 hover:scale-110 ease-in duration-300 rounded-lg m-2 cursor-pointer'>
+                <a onClick={handleNav} href="#contact" className='flex items-center justify-center w-[70%] bg-gray-100 shadow-lg shadow-gray-400 p-2 hover:scale-110 ease-in duration-300 rounded-lg m-2 cursor-pointer'>
                   <AiOutlineMail size={20}/>
                   <span className='pl-4'>Contact</span>
                 </a>

@@ -7,7 +7,7 @@ const home = () => {
   return (
     <div id='home'>
       <img src="./main.jpg" alt="main_image" className='w-full h-screen object-cover'/>
-      <div className='w-full h-screen absolute top-0 left-0 bg-black/70'>
+      <div className='w-full h-screen absolute top-0 left-0 bg-black/40'>
         <div className="max-w-[700px] m-auto w-full h-screen flex flex-col justify-center md:items-start  items-center text-white">
             <h1 className='text-4xl md:text-5xl capitalize '>I'm Kevine Ishimwe</h1>
             <h2 className='flex my-[5%] text-xl'>
